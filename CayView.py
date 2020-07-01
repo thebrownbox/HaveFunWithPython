@@ -1,9 +1,9 @@
-import webbrowser
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+chromeDriverPath = "/Users/conghoang/.wdm/drivers/chromedriver/mac64/83.0.4103.39/chromedriver";
 
-url = 'http://www.python.org/'
+driver1 = webdriver.Chrome(chromeDriverPath)
+driver1.get("https://www.google.com/")
 
-# Open URL in a new tab, if a browser window is already open.
-webbrowser.open_new_tab(url + 'doc/')
-
-# Open URL in new window, raising the window if possible.
-webbrowser.open_new(url)
+driver2 = webdriver.Chrome(chromeDriverPath)
+driver2.get("https://www.google.com/")
