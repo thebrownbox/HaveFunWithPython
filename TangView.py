@@ -10,9 +10,11 @@ listVideo = videoFile.readlines()
 
 saveViewFile = open(viewCountFileName, "r+")
 viewCount = int(saveViewFile.read())
+saveViewFile.close()
 
 NUMBER_OF_WINDOW = 4
 NUMBER_OF_VIDEO = len(listVideo)
+LOOP_TIME = 3
 
 print("WINDOW: " + str(NUMBER_OF_WINDOW))
 print("VIDEO: " + str(NUMBER_OF_VIDEO))
@@ -42,9 +44,11 @@ while True:
         time.sleep(0.5)
         browser.get(url)
     
+    saveViewFile = open(viewCountFileName, "r+")
     viewCount = viewCount+1
     saveViewFile.seek(0)
     saveViewFile.truncate(0)
     saveViewFile.write(str(viewCount))
+    saveViewFile.close()
 
-    time.sleep(3)
+    time.sleep(LOOP_TIME)
