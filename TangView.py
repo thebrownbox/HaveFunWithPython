@@ -6,41 +6,38 @@ cssSelectorBtPlay = "#movie_player > div.ytp-cued-thumbnail-overlay > button"
 fileName = "videolist.txt"
 
 myFile = open(fileName)
-listUrl = myFile.readlines()
+listVideo = myFile.readlines()
 
-url = "https://www.youtube.com/watch?v=9EqZrpEs5rw"
+NUMBER_OF_WINDOW = 4
+NUMBER_OF_VIDEO = len(listVideo)
 
-url2 = "https://www.youtube.com/watch?v=VIHXxOWeszQ"
+print("WINDOW: " + str(NUMBER_OF_WINDOW))
+print("VIDEO: " + str(NUMBER_OF_VIDEO))
+
+videoIndex = 0
+windowIndex = 0
+windowCount = 1
 
 browser = webdriver.Chrome()
-browser.get(url)
-time.sleep(1)
+browser.get(listVideo[videoIndex])
 browser.set_window_position(100,100);
+time.sleep(1)
 e = browser.find_element_by_css_selector(cssSelectorBtPlay)
 e.click()
-print (browser.current_window_handle)
-
-time.sleep(2)
-browser.execute_script("window.open('"+url2+"')")
-
-time.sleep(2)
-browser.execute_script("window.open('"+url2+"')")
-
-time.sleep(2)
-browser.execute_script("window.open('"+url2+"')")
-
-time.sleep(2)
-browser.execute_script("window.open('"+url2+"')")
-
-time.sleep(2)
-print (browser.current_window_handle)
 
 
-
-count = 0;
 while True:
-    count = (count + 1) % 4;
-    browser.switch_to.window(browser.window_handles[count])
-    time.sleep(0.5)
-    browser.get(listUrl[count])
-    time.sleep(2);
+    videoIndex = (videoIndex + 1) % NUMBER_OF_VIDEO
+    windowIndex = (windowIndex + 1) % NUMBER_OF_WINDOW
+    print(str(windowIndex) + " : " + str(videoIndex))
+    url = listVideo[videoIndex].strip();
+
+    if windowCount < NUMBER_OF_WINDOW:
+        windowCount = windowCount + 1;
+        browser.execute_script("window.open('"+url+"')")
+    else:
+        browser.switch_to.window(browser.window_handles[windowIndex])
+        time.sleep(0.5)
+        browser.get(url)
+    
+    time.sleep(3)
