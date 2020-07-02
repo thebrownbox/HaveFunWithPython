@@ -8,7 +8,7 @@ viewCountFileName = "viewcount.txt"
 videoFile = open(videoFileName)
 listVideo = videoFile.readlines()
 
-saveViewFile = open(viewCountFileName, "r+")
+saveViewFile = open(viewCountFileName, "r")
 viewCount = int(saveViewFile.read())
 saveViewFile.close()
 
@@ -43,11 +43,10 @@ while True:
         browser.switch_to.window(browser.window_handles[windowIndex])
         time.sleep(0.5)
         browser.get(url)
+
+    viewCount = viewCount+1    
     
-    saveViewFile = open(viewCountFileName, "r+")
-    viewCount = viewCount+1
-    saveViewFile.seek(0)
-    saveViewFile.truncate(0)
+    saveViewFile = open(viewCountFileName, "w")
     saveViewFile.write(str(viewCount))
     saveViewFile.close()
 
