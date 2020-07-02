@@ -1,12 +1,15 @@
 import time
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 
 cssSelectorBtPlay = "#movie_player > div.ytp-cued-thumbnail-overlay > button"
-fileName = "videolist.txt"
+videoFileName = "videolist.txt"
+viewCountFileName = "viewcount.txt"
 
-myFile = open(fileName)
-listVideo = myFile.readlines()
+videoFile = open(videoFileName)
+listVideo = videoFile.readlines()
+
+saveViewFile = open(viewCountFileName, "r+")
+viewCount = int(saveViewFile.read())
 
 NUMBER_OF_WINDOW = 4
 NUMBER_OF_VIDEO = len(listVideo)
@@ -25,7 +28,6 @@ time.sleep(1)
 e = browser.find_element_by_css_selector(cssSelectorBtPlay)
 e.click()
 
-
 while True:
     videoIndex = (videoIndex + 1) % NUMBER_OF_VIDEO
     windowIndex = (windowIndex + 1) % NUMBER_OF_WINDOW
@@ -40,4 +42,9 @@ while True:
         time.sleep(0.5)
         browser.get(url)
     
+    viewCount = viewCount+1
+    saveViewFile.seek(0)
+    saveViewFile.truncate(0)
+    saveViewFile.write(str(viewCount))
+
     time.sleep(3)
