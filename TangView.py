@@ -7,10 +7,7 @@ viewCountFileName = "viewcount.txt"
 
 videoFile = open(videoFileName)
 listVideo = videoFile.readlines()
-
-saveViewFile = open(viewCountFileName, "r")
-viewCount = int(saveViewFile.read())
-saveViewFile.close()
+viewCount = 0
 
 NUMBER_OF_WINDOW = 4
 NUMBER_OF_VIDEO = len(listVideo)
