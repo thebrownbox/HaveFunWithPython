@@ -7,7 +7,10 @@ viewCountFileName = "viewcount.txt"
 
 videoFile = open(videoFileName)
 listVideo = videoFile.readlines()
-viewCount = 0
+
+saveViewFile = open(viewCountFileName, "r")
+viewCount = int(saveViewFile.read())
+saveViewFile.close()
 
 NUMBER_OF_WINDOW = 4
 NUMBER_OF_VIDEO = len(listVideo)
@@ -23,9 +26,10 @@ windowCount = 1
 browser = webdriver.Chrome()
 browser.get(listVideo[videoIndex])
 browser.set_window_position(100,100);
-time.sleep(1)
+time.sleep(2)
 e = browser.find_element_by_css_selector(cssSelectorBtPlay)
 e.click()
+time.sleep(1)
 
 while True:
     videoIndex = (videoIndex + 1) % NUMBER_OF_VIDEO
