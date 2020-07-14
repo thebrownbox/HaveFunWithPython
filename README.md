@@ -1,5 +1,6 @@
 ﻿# Have Fun With Python #No.1
-Mini Project: Cày View Youtube
+## Mini Project: Cày View Youtube
+
 Sử dụng python và Selenium để tạo ra một sript tự động mở browser và view một list các video được chỉ định sẵn.
 Kiến thức:
 - Biết cách đọc/ghi file
@@ -8,5 +9,4 @@ Kiến thức:
 - Các câu lệnh cơ bản trong Python
 
 Video hướng dẫn chi tiết: https://www.youtube.com/watch?v=XSQT9RBKoCs
-
 Bài viết hướng dẫn chi tiết: http://www.hoangvancong.com/2020/07/02/web-automation-with-selenium-python/
