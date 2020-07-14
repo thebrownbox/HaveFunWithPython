@@ -8,4 +8,5 @@ Kiến thức:
 - Các câu lệnh cơ bản trong Python
 
 Video hướng dẫn chi tiết: https://www.youtube.com/watch?v=XSQT9RBKoCs
+
 Bài viết hướng dẫn chi tiết: http://www.hoangvancong.com/2020/07/02/web-automation-with-selenium-python/
