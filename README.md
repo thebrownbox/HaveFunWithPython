@@ -1,5 +1,5 @@
-﻿# Have Fun With Python #No.1
-## Mini Project: Cày View Youtube
+﻿# Have Fun With Python [#No.1]
+## Cày View Youtube
 
 Sử dụng python và Selenium để tạo ra một sript tự động mở browser và view một list các video được chỉ định sẵn.
 Kiến thức:
