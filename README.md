@@ -17,3 +17,7 @@ geckodriver: https://github.com/mozilla/geckodriver/releases
 
 * Chrome Driver:
 http://chromedriver.storage.googleapis.com/index.html
+
+
+Add Driver to you PATH.
+With MAC, copy driver to /usr/local/bin folder
