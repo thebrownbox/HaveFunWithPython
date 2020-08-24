@@ -1,5 +1,4 @@
-# import Item as it
-from Item import Item
+from Target import Target
 from threading import Thread
 from DealHunter import DealHunter
 import Helper
@@ -10,26 +9,30 @@ import timeit
 INPUT_FILE = "items_25.txt"
 
 def main(fileName):
+    # get data from file
     listItem = Helper.getItems(fileName)
-    gang = []
+
+    listThread = []
+
+    # create display thread
+    displayThread = Helper.Display()
+    listThread.append(displayThread)
     
-    start = timeit.default_timer()
+    # create hunter threads
     for item in listItem:
         hunter = DealHunter(item)
+        
+        listThread.append(hunter)
+        displayThread.addHunter(hunter)
+
         hunter.start()
-        gang.append(hunter)
-        # hunter.join()
 
-    
-    # time.sleep(3)
-    for hunter in gang:
-        hunter.join()
-    
-    start = timeit.default_timer() - start
-    print("=========== "+ str(start) +" ==============")
-    time.sleep(3)    
-    print("============2=============")
+    displayThread.start()
 
+    # join all thread
+    for t in listThread:
+        t.join()
+    
 if __name__ == '__main__':
     if(len(sys.argv) > 1):
         main(sys.argv[1])

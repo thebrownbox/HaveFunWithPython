@@ -1,9 +1,9 @@
 from threading import Thread
 import time
 import random
-from os import system, name
 
-from Item import Item
+
+from Target import Target
 
 class DealHunter (Thread):
     DELAY_TIME = 0.2
@@ -13,22 +13,26 @@ class DealHunter (Thread):
         Thread.__init__(self)
         self.item = targetItem
         self.name = self.item.name
+        self.foundUrl = ""
+        self.status = "...INIT..."
 
 
     def start(self):
-        print("=== [" + self.name + "] STARTED ===")
+        # print("=== [" + self.name + "] STARTED ===")
+        self.status = "...STARTED..."
         return super().start()
 
 
     def run(self):
         i = 0
-        # time.sleep(1)
+        self.status = "...RUNNING..."
         while True:
             i += 1
-            # system("clear")
-            print(self.name + " - " + str(i))
+            # print(self.name + " - " + str(i))
             # time.sleep(random.random())
             time.sleep(DealHunter.DELAY_TIME)
-            if i > DealHunter.LOOP_COUNT:
+            if i > random.randrange(10, 30): #DealHunter.LOOP_COUNT
                 break
-        print("=== [" + self.name +"] FINISHED ===")
+        # print("=== [" + self.name +"] FINISHED ===")
+        self.foundUrl = "...FINISHED..."
+        self.status = self.foundUrl
