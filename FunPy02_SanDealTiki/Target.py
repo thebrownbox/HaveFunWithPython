@@ -1,5 +1,5 @@
 class Target:
-    def __init__(self, name = "N/A", maxPrice = 1000, url = "None"):
+    def __init__(self, name = "N/A", maxPrice = 10000000, url = "None"):
         self.name = name
         self.url = url
         self.maxPrice = maxPrice

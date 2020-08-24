@@ -1,5 +1,6 @@
 from threading import Thread
 from Target import Target
+from Item import Item
 from os import system, name
 import time
 
@@ -16,11 +17,41 @@ def getItems(fileName):
         # print(lines[i])
         if(len(lines) == 0):
             break
-        item = Target(lines[i].strip(), lines[i+1].strip(), lines[i+2].strip())
+        item = Target(lines[i].strip(), correctNumber(lines[i+1].strip()), lines[i+2].strip())
         listItem.append(item)
         i += 3
 
     return listItem
+
+def correctNumber(price):
+    price = price.replace('.', '')
+    price = price.replace('đ', '')
+    return int(price)
+
+def getItemFromHtmlElement(itemHtml):
+    newItem = Item()
+    # 1. Get title
+    newItem.name = itemHtml.get("title")
+    # 2. Get final price
+    priceText = itemHtml.find("span", {"class":"final-price"}).get_text()
+    # 3. Get regular price (If has)
+    regularPrice = itemHtml.find("span", {"class":"price-regular"})
+    if(regularPrice != None):
+        newItem.regularPrice = correctNumber(regularPrice.get_text().strip())
+
+        finalPrice = str(priceText).split("đ")
+        if(len(finalPrice) > 0): # discount if has
+            newItem.price = correctNumber(finalPrice[0].strip())
+            newItem.discount = finalPrice[1].strip()
+    else:
+        newItem.price = correctNumber(priceText)
+        newItem.regularPrice = 0
+        newItem.discount = ""
+
+    # 4. url
+    url = "https://tiki.vn" + itemHtml.get("href")
+    newItem.url = url
+    return newItem
 
 
 class Display(Thread):
@@ -43,8 +74,4 @@ class Display(Thread):
         return bIsRunning
     
     def run(self):
-        while self.isRuning():
-            self.display()
-            time.sleep(0.5)
-            system("clear")
-        self.display()
+        pass
