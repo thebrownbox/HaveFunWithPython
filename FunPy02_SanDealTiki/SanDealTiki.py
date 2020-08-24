@@ -1,9 +1,11 @@
-INPUT_FILE = "items.txt"
+# import Item as it
+from Item import Item
+
+INPUT_FILE = "items_25.txt"
 
 inputFile = open(INPUT_FILE, "r")
 itemList = inputFile.readlines()
 inputFile.close()
 
-# Show the content file
-# for s in itemList:
-#     print(s)
+it.Item()
+Item()
