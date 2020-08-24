@@ -13,7 +13,7 @@ def getItems(fileName):
         # print(lines[i])
         if(len(lines) == 0):
             break
-        item = Item(lines[i], lines[i+1])
+        item = Item(lines[i].strip(), lines[i+1].strip())
         listItem.append(item)
         i += 2
 
