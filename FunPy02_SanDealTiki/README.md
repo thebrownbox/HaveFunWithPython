@@ -17,11 +17,13 @@ Tiki Deal: https://tiki.vn/chuong-trinh/dzut-co-hon
 
 Kiến thức sử dụng:
 1. Cách đọc file
-2. OOP trong Python
-
+2. Class (OOP) trong Python
+    - Class Object:
+    - Attribute references
+    - Data attributes (instance variables)
 
 Refs:
-- Class in python: https://docs.python.org/3/tutorial/classes.html
+- Class in python: https://docs.python.org/3/tutorial/classes.html#a-first-look-at-classes
 - Multi-thread in python:
 https://www.tutorialspoint.com/python/python_multithreading.htm
 https://docs.python.org/3/library/threading.html
