@@ -1,5 +1,6 @@
 from threading import Thread
 from Helper import getItemFromHtmlElement
+from Helper import numberToStrPrice
 import time
 import random
 import requests
@@ -37,7 +38,7 @@ class DealHunter (Thread):
         print(self.target.name + ": " + str(len(listItem)) + " items:")
         for item in listItem:
             # print(self.target.name + ": " + str(item.price) + "\n" + item.url)
-            print(self.target.name + ": " + str(item.price))
+            print(self.target.name + " ("  + numberToStrPrice(self.target.maxPrice) + "): " + numberToStrPrice(item.price))
 
     def run(self):
         i = 0

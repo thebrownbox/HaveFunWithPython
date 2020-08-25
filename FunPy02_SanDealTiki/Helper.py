@@ -23,10 +23,22 @@ def getItems(fileName):
 
     return listItem
 
-def correctNumber(price):
-    price = price.replace('.', '')
-    price = price.replace('đ', '')
-    return int(price)
+def correctNumber(strPrice):
+    strPrice = strPrice.replace('.', '')
+    strPrice = strPrice.replace('đ', '')
+    return int(strPrice)
+
+def numberToStrPrice(intPrice):
+    strPrice = str(intPrice)
+    n = len(strPrice)
+    k = int((n-1) / 3)
+    # print("k = " + str(k) + " n = " + str(n))
+    i = 0
+    while i < k:
+        i += 1
+        index = (-3) * i - (i-1)
+        strPrice = strPrice[:index] + "." + strPrice[index:]
+    return strPrice
 
 def getItemFromHtmlElement(itemHtml):
     newItem = Item()

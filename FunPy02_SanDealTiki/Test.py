@@ -1,8 +1,14 @@
 import requests
+from Helper import numberToStrPrice
 from bs4 import BeautifulSoup
 
 URL = "https://tiki.vn/search?q=Apple%20AirPods%202&_lc=Vk4wMzQwMjcwMDM=&headphone_type=108271"
- 
+
+
+print(numberToStrPrice(100))
+print(numberToStrPrice(1000))
+print(numberToStrPrice(1000000))
+pass
 req = requests.get(URL)
 
 soup = BeautifulSoup(req.text, "lxml")
