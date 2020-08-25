@@ -1,6 +1,7 @@
 from threading import Thread
 from Target import Target
 from Item import Item
+import DealHunter
 from os import system, name
 import time
 
@@ -42,6 +43,11 @@ def numberToStrPrice(intPrice):
 
 def getItemFromHtmlElement(itemHtml):
     newItem = Item()
+
+    strHtml = str(itemHtml)
+    if ("hết hàng" in strHtml) or ("Ngừng kinh doanh" in strHtml):
+        return None 
+
     # 1. Get title
     newItem.name = itemHtml.get("title")
     # 2. Get final price
@@ -67,6 +73,7 @@ def getItemFromHtmlElement(itemHtml):
 
 
 class Display(Thread):
+    # DELAY_TIME = 3
 
     def __init__(self):
         Thread.__init__(self)
@@ -77,7 +84,8 @@ class Display(Thread):
 
     def display(self):
         for hunter in self.listHunter:
-            print(hunter.name + ": " + hunter.status)
+            print(hunter.display)
+        print("=====================================")
 
     def isRuning(self):
         bIsRunning = False
@@ -86,4 +94,8 @@ class Display(Thread):
         return bIsRunning
     
     def run(self):
-        pass
+        system("clear")
+        while self.isRuning():
+            self.display()
+            time.sleep(DealHunter.DealHunter.DELAY_TIME)
+            system("clear")

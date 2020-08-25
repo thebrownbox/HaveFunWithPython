@@ -9,19 +9,18 @@ from bs4 import BeautifulSoup
 from Target import Target
 
 class DealHunter (Thread):
-    DELAY_TIME = 10
-    LOOP_COUNT = 10
+    DELAY_TIME = 3
 
     def __init__(self, targetItem):
         Thread.__init__(self)
         self.target = targetItem
-        self.name = self.target.name
-        self.status = "...INIT..."
+        self.name = self.target.name + "("+numberToStrPrice(self.target.maxPrice)+")"
+        self.display = "...INIT..."
 
 
     def start(self):
         # print("=== [" + self.name + "] STARTED ===")
-        self.status = "...STARTED..."
+        self.display = "...STARTED..."
         return super().start()
 
     def findTheBestDeal(self):
@@ -32,19 +31,28 @@ class DealHunter (Thread):
         listItem = []
         for htmlElement in htmlElements:
             newItem = getItemFromHtmlElement(htmlElement)
-            if self.target.name in newItem.name and newItem.price < self.target.maxPrice:
-                listItem.append(newItem)
-
-        print(self.target.name + ": " + str(len(listItem)) + " items:")
-        for item in listItem:
-            # print(self.target.name + ": " + str(item.price) + "\n" + item.url)
-            print(self.target.name + " ("  + numberToStrPrice(self.target.maxPrice) + "): " + numberToStrPrice(item.price))
+            if newItem != None:
+                if (self.target.name in newItem.name) and (newItem.price < self.target.maxPrice):
+                    listItem.append(newItem)
+        
+        if len(listItem) > 0:
+            self.display = ""
+            # print(self.target.name + " ("  + numberToStrPrice(self.target.maxPrice) + "): " + ": " + str(len(listItem)) + " items:")
+            self.display += (self.name + ": " + str(len(listItem)) + " items:") + "\n"
+            i = 1
+            for item in listItem:
+                # print(str(i)+", "+numberToStrPrice(item.price) +": " + item.url)
+                self.display += (str(i)+", "+numberToStrPrice(item.price) +": \n" + item.url) + "\n"
+                i += 1
+        else:
+            self.display = self.name +": ...RUNNING..." + "\n"
 
     def run(self):
         i = 0
-        self.status = "...RUNNING..."
+        self.display = self.name + ": ...RUNNING..." + "\n"
+        # print(self.target.name +": RUNNING...")
         while True:
             self.findTheBestDeal()
             time.sleep(DealHunter.DELAY_TIME)
 
-        self.status = "...FINISHED..."
+        self.display = "...FINISHED..." + "\n"
