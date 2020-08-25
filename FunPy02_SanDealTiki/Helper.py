@@ -94,8 +94,8 @@ class Display(Thread):
         return bIsRunning
     
     def run(self):
-        system("clear")
+        # system("clear")
         while self.isRuning():
             self.display()
             time.sleep(DealHunter.DealHunter.DELAY_TIME)
-            system("clear")
+            # system("clear")
