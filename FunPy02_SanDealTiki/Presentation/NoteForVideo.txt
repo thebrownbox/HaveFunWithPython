@@ -1,0 +1,25 @@
+
+
+
+Sec 1: Introduce
+	1. About Have Fun with Python Series
+		- We don't teach python, we show you how you can use python in your real life problems.
+		- Provide you the knowlegde that you migh want to know in the fueture and that you migh you in your project.
+		- The series only teach you the way to solve a particular problem, it may not be the best solution, so you could improve it with your own way, and comment it in the video so we know how you do it.
+
+	2. About SanDealTikiWithPython Project
+		- We find the best price of an item that we're looking for.
+
+	3. Knowlegde that you will learn in this project
+		- Read file
+		- How to separate work into multiple module with multiple python file
+		- OOP in action: How to create class, how to use inherit
+		- What is a Thread and How to usie Multiple Threads
+		- How to use Request module to get Data from web
+		- How to use BeautifulSoup mopdule to parse your data
+
+Sec 2: Implementation
+	1. Overrall structure of project.
+
+
+
