@@ -1,0 +1,133 @@
+n = 4
+Start Thread:  Máy ảnh lấy liền Fujifilm
+Start Thread:  Nồi Chiên Không Dầu Philips
+0 : 
+Máy Ảnh Selfie Lấy Liền Fujifilm Instax Mini 9 - Smoky White - Hàng Chính Hãng | 1499000 | https://tiki.vn/may-anh-selfie-lay-lien-fujifilm-instax-mini-9-smoky-white-hang-chinh-hang-p683684.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+1 : 
+Máy ảnh lấy liền Fujifilm Instax Mini LiPlay - Hàng chính hãng | 3390000 | https://tiki.vn/may-anh-lay-lien-fujifilm-instax-mini-liplay-hang-chinh-hang-p26432268.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+2 : 
+Máy Ảnh Selfie Lấy Liền Fujifilm Instax Mini 9 - Lime Green - Hàng Chính Hãng | 1499000 | https://tiki.vn/may-anh-selfie-lay-lien-fujifilm-instax-mini-9-lime-green-hang-chinh-hang-p683688.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+3 : 
+Máy Ảnh Selfie Lấy Liền Fujifilm Instax Mini 9 - Flamingo Pink - Hàng Chính Hãng | 1499000 | https://tiki.vn/may-anh-selfie-lay-lien-fujifilm-instax-mini-9-flamingo-pink-hang-chinh-hang-p683686.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+4 : 
+Máy Ảnh Lấy Liền Fujifilm Instax Mini 11-Hàng Chính Hãng | 1790000 | https://tiki.vn/may-anh-lay-lien-fujifilm-instax-mini-11-hang-chinh-hang-p55930758.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+5 : 
+6 : 
+Máy Ảnh Lấy Liền Fujifilm Instax Square SQ20 - Hàng Chính Hãng | 4290000 | https://tiki.vn/may-anh-lay-lien-fujifilm-instax-square-sq20-hang-chinh-hang-p14497415.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+7 : 
+8 : 
+9 : 
+Máy Ảnh Lấy Liền Fujifilm Instax SQ6 - Hàng Chính Hãng | 2990000 | https://tiki.vn/may-anh-lay-lien-fujifilm-instax-sq6-hang-chinh-hang-p2383179.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+10 : 
+Máy Ảnh Selfie Lấy Liền Fujifilm Instax Mini 9 - Cobalt Blue - Hàng Chính Hãng | 1399000 | https://tiki.vn/may-anh-selfie-lay-lien-fujifilm-instax-mini-9-cobalt-blue-hang-chinh-hang-p683666.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+11 : 
+12 : 
+13 : 
+Máy Ảnh Selfie Lấy Liền Fujifilm Instax Mini 9 Clear Purple - Hàng Chính Hãng | 1499000 | https://tiki.vn/may-anh-selfie-lay-lien-fujifilm-instax-mini-9-clear-purple-hang-chinh-hang-p27777121.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+14 : 
+15 : 
+Máy Ảnh Selfie Lấy Liền Fujifilm Instax Mini 70 - Đen - Hàng Chính Hãng | 2690000 | https://tiki.vn/may-anh-selfie-lay-lien-fujifilm-instax-mini-70-den-hang-chinh-hang-p627687.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+16 : 
+17 : 
+18 : 
+Máy Ảnh Lấy Liền Fujifilm Instax SQ6 Taylor Swift (Special Edition) - Hàng chính hãng  | 4290000 | https://tiki.vn/may-anh-lay-lien-fujifilm-instax-sq6-taylor-swift-special-edition-hang-chinh-hang-p4595147.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+19 : 
+20 : 
+Máy Ảnh Selfie Lấy Liền Fujifilm Instax Mini 70  - Xanh - Hàng Chính Hãng | 2690000 | https://tiki.vn/may-anh-selfie-lay-lien-fujifilm-instax-mini-70-xanh-hang-chinh-hang-p454832.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+21 : 
+Máy Ảnh Selfie Lấy Liền Fujifilm Instax Mini 70  - Vàng - Hàng Chính Hãng | 2690000 | https://tiki.vn/may-anh-selfie-lay-lien-fujifilm-instax-mini-70-vang-hang-chinh-hang-p454834.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+22 : 
+23 : 
+24 : 
+25 : 
+26 : 
+Máy Ảnh Selfie Lấy Liền Fujifilm Instax Mini 70 - Vàng Đồng - Hàng Chính Hãng | 2690000 | https://tiki.vn/may-anh-selfie-lay-lien-fujifilm-instax-mini-70-vang-dong-hang-chinh-hang-p627682.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+27 : 
+Máy Ảnh Selfie Lấy Liền Fujifilm Instax Mini 70  - Trắng - Hàng Chính Hãng | 2690000 | https://tiki.vn/may-anh-selfie-lay-lien-fujifilm-instax-mini-70-trang-hang-chinh-hang-p454836.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+28 : 
+29 : 
+30 : 
+31 : 
+32 : 
+33 : 
+34 : 
+35 : 
+36 : 
+37 : 
+38 : 
+=========== Đã hết hàng ======
+38 : 
+=========== Đã hết hàng ======
+38 : 
+=========== Đã hết hàng ======
+38 : 
+39 : 
+40 : 
+=========== Đã hết hàng ======
+Best Item: 
+Máy Ảnh Selfie Lấy Liền Fujifilm Instax Mini 9 - Cobalt Blue - Hàng Chính Hãng | 1399000 | https://tiki.vn/may-anh-selfie-lay-lien-fujifilm-instax-mini-9-cobalt-blue-hang-chinh-hang-p683666.html?src=search&2hi=0&keyword=M%C3%A1y+%E1%BA%A3nh+l%E1%BA%A5y+li%E1%BB%81n+Fujifilm
+End Thread:  Máy ảnh lấy liền Fujifilm
+0 : 
+Nồi Chiên Không Dầu Philips HD9220/20 - Hàng chính hãng | 2649000 | https://tiki.vn/noi-chien-khong-dau-philips-hd9220-20-hang-chinh-hang-p406414.html?src=search&2hi=0&keyword=N%E1%BB%93i+Chi%C3%AAn+Kh%C3%B4ng+D%E1%BA%A7u+Philips
+1 : 
+2 : 
+Nồi Chiên Không Dầu Philips HD9745 (1500W) - Hàng Chính Hãng | 4899000 | https://tiki.vn/noi-chien-khong-dau-philips-hd9745-1500w-hang-chinh-hang-p51200047.html?src=search&2hi=0&keyword=N%E1%BB%93i+Chi%C3%AAn+Kh%C3%B4ng+D%E1%BA%A7u+Philips
+3 : 
+Nồi Chiên Không Dầu Điện Tử Philips HD9650/91 XXL (1.4kg) - Hàng Chính Hãng | 6399000 | https://tiki.vn/noi-chien-khong-dau-dien-tu-philips-hd9650-91-xxl-1-4kg-hang-chinh-hang-p13516156.html?src=search&2hi=0&keyword=N%E1%BB%93i+Chi%C3%AAn+Kh%C3%B4ng+D%E1%BA%A7u+Philips
+4 : 
+5 : 
+Nồi Chiên Không Dầu Philips HD9220/20 - Hàng nhập khẩu | 2699000 | https://tiki.vn/noi-chien-khong-dau-philips-hd9220-20-hang-nhap-khau-p21388715.html?src=search&2hi=0&keyword=N%E1%BB%93i+Chi%C3%AAn+Kh%C3%B4ng+D%E1%BA%A7u+Philips
+6 : 
+Nồi chiên không dầu Philips HD9654 - Hàng nhập khẩu | 6098000 | https://tiki.vn/noi-chien-khong-dau-philips-hd9654-hang-nhap-khau-p38243191.html?src=search&2hi=0&keyword=N%E1%BB%93i+Chi%C3%AAn+Kh%C3%B4ng+D%E1%BA%A7u+Philips
+7 : 
+8 : 
+9 : 
+10 : 
+11 : 
+12 : 
+Nồi Chiên Không Dầu Philips HD9218 (1425W) - Hàng Chính Hãng | 4190000 | https://tiki.vn/noi-chien-khong-dau-philips-hd9218-1425w-hang-chinh-hang-p51200049.html?src=search&2hi=0&keyword=N%E1%BB%93i+Chi%C3%AAn+Kh%C3%B4ng+D%E1%BA%A7u+Philips
+13 : 
+14 : 
+15 : 
+16 : 
+17 : 
+18 : 
+19 : 
+20 : 
+21 : 
+22 : 
+23 : 
+24 : 
+25 : 
+26 : 
+27 : 
+28 : 
+29 : 
+30 : 
+31 : 
+Nồi Chiên Không Dầu Philips HD9220/20 - Hàng Nhập Khẩu | 2699000 | https://tiki.vn/noi-chien-khong-dau-philips-hd9220-20-hang-nhap-khau-p3873839.html?src=search&2hi=0&keyword=N%E1%BB%93i+Chi%C3%AAn+Kh%C3%B4ng+D%E1%BA%A7u+Philips
+32 : 
+33 : 
+Nồi chiên không dầu Philips HD9654- Hàng nhập khẩu | 6299000 | https://tiki.vn/noi-chien-khong-dau-philips-hd9654-hang-nhap-khau-p20419553.html?src=search&2hi=0&keyword=N%E1%BB%93i+Chi%C3%AAn+Kh%C3%B4ng+D%E1%BA%A7u+Philips
+34 : 
+Nồi Chiên Không Dầu Philips HD9745 (1500W). Hàng nhập khẩu | 4790000 | https://tiki.vn/noi-chien-khong-dau-philips-hd9745-1500w-hang-nhap-khau-p54590145.html?src=search&2hi=0&keyword=N%E1%BB%93i+Chi%C3%AAn+Kh%C3%B4ng+D%E1%BA%A7u+Philips
+35 : 
+36 : 
+37 : 
+38 : 
+Nồi chiên không dầu Philips HD9860. Hàng nhập khẩu | 9009000 | https://tiki.vn/noi-chien-khong-dau-philips-hd9860-hang-nhap-khau-p54442732.html?src=search&2hi=0&keyword=N%E1%BB%93i+Chi%C3%AAn+Kh%C3%B4ng+D%E1%BA%A7u+Philips
+39 : 
+40 : 
+41 : 
+42 : 
+43 : 
+44 : 
+45 : 
+46 : 
+47 : 
+48 : 
+Best Item: 
+Nồi Chiên Không Dầu Philips HD9220/20 - Hàng chính hãng | 2649000 | https://tiki.vn/noi-chien-khong-dau-philips-hd9220-20-hang-chinh-hang-p406414.html?src=search&2hi=0&keyword=N%E1%BB%93i+Chi%C3%AAn+Kh%C3%B4ng+D%E1%BA%A7u+Philips
+End Thread:  Nồi Chiên Không Dầu Philips
+Duration: 1.5549781322479248
+===== END Main ====
