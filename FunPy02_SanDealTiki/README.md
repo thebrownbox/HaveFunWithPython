@@ -1,4 +1,6 @@
-* Request </br>
+* Module: Requests </br>
 pip install requests
-* Beautiful Soup </br>
+* Module: Beautiful Soup </br>
 pip install beautifulsoup4
+* Module: lxml </br>
+pip install lxml
