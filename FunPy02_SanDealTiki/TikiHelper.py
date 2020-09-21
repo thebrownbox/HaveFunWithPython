@@ -1,7 +1,13 @@
+# -*- coding: utf-8 -*-
 from TikiTarget import TikiTarget
+from sys import platform
 
 def getTargetsFromFile(fileName):
-    targetFile = open(fileName, "r", encoding="utf8")
+    if platform == "win32": # for Windows
+        targetFile = open(fileName, "r", encoding="utf8")
+    else:                   # for Others
+        targetFile = open(fileName, "r")
+
     lines = targetFile.readlines()
     targetFile.close()
 
