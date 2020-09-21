@@ -1,7 +1,7 @@
 from TikiTarget import TikiTarget
 
 def getTargetsFromFile(fileName):
-    targetFile = open(fileName, "r")
+    targetFile = open(fileName, "r", encoding="utf8")
     lines = targetFile.readlines()
     targetFile.close()
 

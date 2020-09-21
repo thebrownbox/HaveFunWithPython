@@ -2,6 +2,7 @@ from threading import Thread
 from TikiHunterThread import TikiHunterThread
 import time
 from os import system
+from sys import platform
 
 class TikiDisplayThread(Thread):
 
@@ -31,4 +32,7 @@ class TikiDisplayThread(Thread):
             print("index: " + str(self.index))
             self.show()
             time.sleep(3)
-            system("clear")
+            if platform == "win32": # for Windows
+                system("cls")
+            else:                   # for others
+                system("clear")
