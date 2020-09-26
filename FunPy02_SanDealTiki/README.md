@@ -1,4 +1,4 @@
-# Have Fun With Python #2: Săn Deal #Tiki with #Python
+# Have Fun With Python No.2: Săn Deal Tiki with Python
 # In this project we will learn:
 - How to read data from file.
 - How to create and work with multiple python source files at a time.
