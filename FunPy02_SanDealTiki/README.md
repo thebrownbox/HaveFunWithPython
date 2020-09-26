@@ -16,3 +16,5 @@ Above knowlegde is very nessesary when you crawling data from some where.
 * Module: lxml </br>
 `pip install lxml`
 
+# Project structure | Class Diagram
+![ClassDiagram](_ClassDiagram.png)
