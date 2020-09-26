@@ -15,3 +15,4 @@ Above knowlegde is very nessesary when you crawling data from some where.
 `pip install beautifulsoup4`
 * Module: lxml </br>
 `pip install lxml`
+
