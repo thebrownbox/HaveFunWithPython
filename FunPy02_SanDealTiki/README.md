@@ -9,8 +9,8 @@ Above knowlegde is very nessesary when you crawling data from some where.
 
 # Install required modules
 * Module: Requests </br>
-pip install requests
+`pip install requests`
 * Module: Beautiful Soup </br>
-pip install beautifulsoup4
+`pip install beautifulsoup4`
 * Module: lxml </br>
-pip install lxml
+`pip install lxml`
