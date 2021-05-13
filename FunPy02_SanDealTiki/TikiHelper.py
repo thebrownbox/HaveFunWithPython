@@ -26,5 +26,10 @@ def getTargetsFromFile(fileName):
 # 1.499.000đ => 1499000
 def convertToPrice(strPrice):
     strPrice = strPrice.replace('.', '')
-    strPrice = strPrice.replace('đ', '')
-    return int(strPrice)
+    strPrice = strPrice.replace('₫', '')
+    return(int(strPrice))
+# -53% => 53
+def convertToDiscount(strDiscount):
+    strDiscount = strDiscount.replace('-', '')
+    strDiscount = strDiscount.replace('%', '')
+    return (int(strDiscount))
