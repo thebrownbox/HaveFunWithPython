@@ -3,7 +3,7 @@ class TikiItem:
     def __init__(self):
         self.title = ""
         self.price = 0
-        self.regularPrice = 0
+        self.discount = 0
         self.url = ""
     
     def info(self):

@@ -19,8 +19,11 @@ class TikiHunterThread(Thread):
     
     def __findBestItem(self):
         # for to MAX_PAGE
+        headers = {
+            'User-Agent': 'Go to | https://www.whatismybrowser.com/detect/what-is-my-user-agent |, Get your User-Agent and paste here'}
         searchLink = self.target.getSearchLink(1)
-        response = requests.get(searchLink)
+        response = requests.get(searchLink, headers=headers)
+        # response = requests.get(searchLink)
 
         if response.status_code != 200:
             return
@@ -28,7 +31,7 @@ class TikiHunterThread(Thread):
 
         bsoup = BeautifulSoup(response.text, "lxml")
         # <a> class = search-a-product-item
-        listElement = bsoup.findAll("a", {"class":"search-a-product-item"})
+        listElement = bsoup.findAll("a", {"class": "product-item"})
 
         i = 0
         for e in listElement:
@@ -40,15 +43,15 @@ class TikiHunterThread(Thread):
 
             newItem = TikiItem()
 
-            newItem.title = e.get("title")
-            newItem.url = "https://tiki.vn" +e.get("href")
-            span = e.find("span", {"class":"final-price"})
-            newItem.price = convertToPrice(span.contents[0].strip())
+            newItem.title = (e.find("div", {"class": "name"}).text)
+            newItem.url = "https://tiki.vn" + e.get("href")
+            span = e.find("div", {"class": "price-discount__price"})
+            newItem.price = convertToPrice(span.text)
 
 
-            span = e.find("span", {"class":"price-regular"})
+            span = e.find("div", {"class":"price-discount__discount"})
             if(span != None):
-                newItem.regularPrice = convertToPrice(span.contents[0].strip())
+                newItem.discount = convertToDiscount(span.text)
 
             if(newItem.isValidItem(self.target.patterns)):
                 # print(newItem.info())
