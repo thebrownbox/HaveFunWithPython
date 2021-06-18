@@ -1,0 +1,10 @@
+https://doc.qt.io/qtforpython/quickstart.html
+https://doc.qt.io/qtforpython/tutorials/qmlapp/qmlapplication.html
+
+conda create --name py_env
+conda activate py_env
+pip install pyside6
+
+C:\Users\Admin\anaconda3
+C:\Users\Admin\anaconda3\Scripts
+C:\Users\Admin\anaconda3\Library\bin
